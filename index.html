@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnapStory Photography</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="image/logo.png" alt="Nabil" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown"><a href="#">Others ▾</a></li>
+        <li><a href="#search">🔍</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BOOTSTRAP FEATURE 1: Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-image" style="background-image: url('image/gede.jpg');"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Capture Life's Beautiful Moments</h2>
+          <p>Professional photography services for any occasion</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background-image: url('image/gunung.jpg');"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Landscape Photography</h2>
+          <p>Showcasing nature's beauty through my lens</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background-image: url('image/tanggung.jpg');"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Portrait Sessions</h2>
+          <p>Creating timeless memories that last forever</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main class="main-container">
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <!-- BOOTSTRAP FEATURE 2: Card -->
+        <div class="card border-0 shadow-lg">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="image/nabil.jpg" class="img-fluid rounded-start" alt="Photographer Portrait">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">About Me</h3>
+                <p class="card-text">Hello! I'm Nabil, a passionate photographer specializing in landscape, portrait, and event photography. With over 5 years of experience, I strive to capture moments that tell meaningful stories.</p>
+                <p class="card-text">My journey in photography began during my college years when I discovered my love for visual storytelling. Since then, I've worked with various clients and have been featured in local exhibitions.</p>
+                <p class="card-text"><small class="text-muted">Based in Malang, Indonesia</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Photography Portfolio</h2>
+        
+        <!-- BOOTSTRAP FEATURE 3: Nav Tabs -->
+        <ul class="nav nav-tabs mb-4 justify-content-center" id="galleryTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="landscape-tab" data-bs-toggle="tab" data-bs-target="#landscape" type="button" role="tab" aria-controls="landscape" aria-selected="true">Landscape</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="portrait-tab" data-bs-toggle="tab" data-bs-target="#portrait" type="button" role="tab" aria-controls="portrait" aria-selected="false">Portrait</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
+          </li>
+        </ul>
+        
+        <div class="tab-content" id="galleryTabContent">
+          <div class="tab-pane fade show active" id="landscape" role="tabpanel" aria-labelledby="landscape-tab">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <img src="image/landscape1.jpg" class="img-fluid rounded gallery-img" alt="Landscape Photo 1">
+              </div>
+              <div class="col-md-4">
+                <img src="image/landscape2.jpg" class="img-fluid rounded gallery-img" alt="Landscape Photo 2">
+              </div>
+              <div class="col-md-4">
+                <img src="image/landscape3.jpg" class="img-fluid rounded gallery-img" alt="Landscape Photo 3">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="portrait" role="tabpanel" aria-labelledby="portrait-tab">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <img src="image/potrait1.jpg" class="img-fluid rounded gallery-img" alt="Portrait Photo 1">
+              </div>
+              <div class="col-md-4">
+                <img src="image/potrait2.jpg" class="img-fluid rounded gallery-img" alt="Portrait Photo 2">
+              </div>
+              <div class="col-md-4">
+                <img src="image/potrait3.jpg" class="img-fluid rounded gallery-img" alt="Portrait Photo 3">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <img src="image/event1.jpg" class="img-fluid rounded gallery-img" alt="Event Photo 1">
+              </div>
+              <div class="col-md-4">
+                <img src="image/event2.jpg" class="img-fluid rounded gallery-img" alt="Event Photo 2">
+              </div>
+              <div class="col-md-4">
+                <img src="image/event3.jpg" class="img-fluid rounded gallery-img" alt="Event Photo 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Photography Services</h2>
+        
+        <!-- BOOTSTRAP FEATURE 4: Cards with Grid System -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Portrait Sessions</h5>
+                <p class="card-text">Individual or group portrait photography in studio or at location of your choice.</p>
+                <p class="pricing">Starting at Rp500.000</p>
+              </div>
+              <div class="card-footer">
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Event Coverage</h5>
+                <p class="card-text">Full coverage of weddings, parties, corporate events, and other special occasions.</p>
+                <p class="pricing">Starting at Rp2.000.000</p>
+              </div>
+              <div class="card-footer">
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Commercial Photography</h5>
+                <p class="card-text">Product, real estate, and promotional photography for businesses.</p>
+                <p class="pricing">Starting at Rp1.500.000</p>
+              </div>
+              <div class="card-footer">
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Client Testimonials</h2>
+        
+        <!-- BOOTSTRAP FEATURE 5: Accordion -->
+        <div class="accordion" id="testimonialsAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Wedding Photography - Andi & Maya
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#testimonialsAccordion">
+              <div class="accordion-body">
+                <div class="row align-items-center">
+                  <div class="col-md-3 text-center">
+                    <img src="image/andimaya.jpg" class="rounded-circle mb-3" alt="Client Photo">
+                    <p class="mb-0"><strong>Andi & Maya</strong></p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
+                  <div class="col-md-9">
+                    <p>"Nabil captured our wedding beautifully! The photos truly reflect the joy and emotion of our special day. Highly professional and a pleasure to work with."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Commercial Photography - Bumi Coffee House
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#testimonialsAccordion">
+              <div class="accordion-body">
+                <div class="row align-items-center">
+                  <div class="col-md-3 text-center">
+                    <img src="image/bumicoffee.jpg" class="rounded-circle mb-3" alt="Client Photo">
+                    <p class="mb-0"><strong>Rudi Hartono</strong></p>
+                    <p class="mb-0">Bumi Coffee House</p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
+                  <div class="col-md-9">
+                    <p>"Nabil's product photography for our coffee shop menu was excellent. The images truly capture the essence of our products and have helped increase our sales. Very satisfied with the results!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Family Portraits - Wijaya Family
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#testimonialsAccordion">
+              <div class="accordion-body">
+                <div class="row align-items-center">
+                  <div class="col-md-3 text-center">
+                    <img src="image/family.jpg" class="rounded-circle mb-3" alt="Client Photo">
+                    <p class="mb-0"><strong>Wijaya Family</strong></p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
+                  <div class="col-md-9">
+                    <p>"We had an amazing experience with Nabil for our family photo shoot. He was patient with our children and captured beautiful, natural moments. The photos exceeded our expectations!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <!-- BOOTSTRAP FEATURE BONUS: Form with Form Controls -->
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Interest</label>
+                <select class="form-select" id="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="portrait">Portrait Photography</option>
+                  <option value="event">Event Coverage</option>
+                  <option value="commercial">Commercial Photography</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>mnabilfatahilah@gmail.com</p>
+        <p>0822-8898-2098 - (Nabil)</p>
+      </div>
+      <div class="footer-section">
+        <h3>Social</h3>
+        <div class="social-icons">
+          <a href="#"><span>🐦</span></a>
+          <a href="#"><span>📷</span></a>
+          <a href="#"><span>📹</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Muhammad Nabil Fatahilah, Photography Portfolio
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
